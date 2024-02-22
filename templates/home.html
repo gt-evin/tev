@@ -1,0 +1,54 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'static/style.css' %}">
+    <link rel="icon" href="{% static 'images/home.png' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <style>
+        img{
+            width: 200px;
+            height: 100px;
+        }
+        h1:hover{
+            color: aqua;
+        }
+        h1{
+            background-color: red;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            line-height: 80px;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+
+<h1>Homepage</h1>
+<a href="{% url 'about' %}" class="btn btn-danger">About</a>
+
+<a href="{% url 'form' %}" class="btn btn-warning">Form</a>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum placeat praesentium quaerat vel? Ad animi asperiores at corporis esse eveniet id itaque, laudantium molestias mollitia necessitatibus suscipit velit voluptatem.</span><span>Asperiores blanditiis commodi corporis culpa dolor dolorem eaque explicabo illum inventore iste maiores maxime, minus modi natus nulla numquam officiis praesentium quidem, quisquam repudiandae sequi temporibus ut vel voluptatem voluptatum.</span><span>Amet autem corporis cum deserunt dignissimos dolorem doloribus et ex exercitationem facere hic iusto laboriosam necessitatibus neque nesciunt nisi, nostrum placeat praesentium ratione repellat rerum saepe sit soluta ullam voluptates!</span></p>
+<img src="{% static 'static/images/image33.jpeg' %}" alt="">
+<img src="{% static 'static/images/image44.jpeg' %}" alt="">
+<img src="{% static 'static/images/image55.jpeg' %}" alt="">
+<img src="{% static 'static/images/image66.jpeg' %}" alt="">
+
+
+<br><br>
+<h1 class="heading2">Services</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, excepturi iusto. Adipisci blanditiis consectetur, dignissimos doloribus eveniet ipsa itaque minus nobis numquam odit possimus, quas quo rerum sint suscipit ut?</p>
+<img class="myimage" src="{% static 'static/images/image55.jpeg' %}" alt="">
+
+
+</body>
+</html>
